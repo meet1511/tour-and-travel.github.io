@@ -18,10 +18,9 @@
     color: black;
     text-shadow: 0px 1px 1px black;
     margin-bottom: 5px;
-}
-
-.d-flex {
-     gap: 10px;
+    justify-content: center;
+    position: relative;
+    
 }
 #logo span{
     color: #ffa500;
@@ -41,7 +40,7 @@
     transition: 0.5s ease;
 }
 .nav-item .nav-link:hover{
-    background: #ffa500;
+    background: #e57608;
     color: white;
     text-decoration: underline;
 }
@@ -49,6 +48,21 @@
     background: orange;
     color: white;
     border: none;
+}
+ul li a btn{
+    background-color: orange;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+ul li btn:hover{
+    background-color: rgb(125, 245, 26);
+
 }
 /* Navbar End */
 
@@ -82,6 +96,12 @@
     color: #ffa500;
     text-shadow: 0px 1px 1px black;
     animation: changetext 10s infinite linear;
+}
+.container .login{
+    background: orange;
+    text-decoration: none;
+    color: white;
+    border: none;
 }
 @keyframes changetext{
     0%{content: "France";}
@@ -183,6 +203,28 @@
 }
 .book .submit:hover{
     width: 170px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #ffa500;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.btn {
+    background-color: rgb(51, 120, 185);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: black;
 }
 @media (max-width:765px){
     .book{

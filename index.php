@@ -57,12 +57,16 @@
               <li class="nav-item">
                 <a class="nav-link" href="#about">About</a>
               </li>
+              <li>
+              
+              </li>
              
             </ul>
-            <form class="d-flex">
-              <a href="login.html"><i class="fa-solid fa-right-to-bracket">Sign In</i></a>
-              <a href="login.html"><i class="fa-solid fa-right-to-bracket">Sign Up</i></a>
-            </form>
+            <a id="home" href="login.php" onclick="login()" 
+            style="text-decoration: none;background-color: orange;color: whitesmoke; padding: 10px; border-radius: 10px;"
+            
+            
+            > <btn> Login </btn></a>
           </div>
         </div>
       </nav>
@@ -104,19 +108,17 @@
           </div>
 
           <div class="col-md-6 py-3 py-md-0">
-            <form action="#">
+            <form action="" method="post">
               <div class="wrapper">
-                <div class="search-input">
-                  <input type="text" class="form-control" placeholder="Where To" required>
-                    <div class="autocom-box form-control"><a href="#">  </a></div>
-                </div>
             </div>
-              
-              <input type="text" class="form-control" placeholder="How Many" required><br>
-              <input type="date" class="form-control" placeholder="Arrivals" required><br>
-              <input type="date" class="form-control" placeholder="Leaving" required><br>
-              <textarea class="form-control" rows="5" name="text" placeholder="Enter Your Name & Details"></textarea>
-              <input type="submit" value="Inquiry Now" class="submit" required>
+              <input type="text" class="form-control" name="Name" placeholder="Name" required><br>
+              <input type="text" class="form-control" name="Number" placeholder="Phone Number" required><br>
+              <input type="text" class="form-control" name="Email" placeholder="Enter your email id" required><br>
+              <input type="text" class="form-control"name="From" placeholder="From" required><br>
+              <input type="text" class="form-control"name="Destination" placeholder="Your Destination" required><br>
+              <input type="text" class="form-control" name="How_Many_Days" placeholder="How Many tour Days" required><br>
+              <input type="text" class="form-control"name="How_Many_Fax" placeholder="How many people do you want to travel?" required><br>
+              <button type="submit" name="btn_submit">Submit</button>
 
             </form>
           </div>
@@ -198,7 +200,7 @@
                   <i class="fa-solid fa-star "></i>
                 </div>
                 <h6>Price: <strong>₹1,11,745</strong></h6>
-                <a href="#book">Book ow</a>
+                <a href="#book">Book Now</a>
               </div>
             </div>
 
@@ -243,7 +245,7 @@
                   <i class="fa-solid fa-star checked"></i>
                   <i class="fa-solid fa-star checked"></i>
                   <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star checked"></i>
                   <i class="fa-solid fa-star "></i>
                 </div>
                 <h6>Price: <strong>₹ 99,999</strong></h6>
@@ -304,7 +306,7 @@
               <i class="fas fa-hotel"></i>
               <div class="card-body">
                 <h3>Affordable Hotel</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eaque.</p>
+                <p>Our dedicated and friendly staff at Sunset View Hotel is committed to delivering exceptional service. From the moment you step into our elegant lobby, our team is ready to assist with any request or inquiry.</p>
               </div>
             </div>
 
@@ -315,7 +317,8 @@
               <i class="fas fa-utensils"></i>
               <div class="card-body">
                 <h3>Food & Drinks</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eaque.</p>
+                <p>What you’ll get on a food tour varies with each company or guide. Typically, tours include a mix of guided walks and tastings of local foods and drinks, ensuring you get a hearty experience of the local cuisine. The amount and variety of food depend on the tour and location, but the aim is always to leave you happily satisfied.
+                </p>
               </div>
             </div>
 
@@ -325,8 +328,8 @@
             <div class="card">
               <i class="fas fa-bullhorn"></i>
               <div class="card-body">
-                <h3>Safty Guide</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eaque.</p>
+                <h3>Flight Tickets</h3>
+                <p>Find the best deals on flight tickets with our convenient booking platform. Save time and money on your next trip with our reliable services.You contact My Trip Planner for your air tickets once and enjoy</p>
               </div>
             </div>
 
@@ -345,7 +348,7 @@
               <i class="fas fa-globe-asia"></i>
               <div class="card-body">
                 <h3>Around The World</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eaque.</p>
+                <p>Explore the wonders of the world with our comprehensive travel guides and tips. Plan your next adventure with Around The World.</p>
               </div>
             </div>
 
@@ -356,7 +359,7 @@
               <i class="fas fa-plane"></i>
               <div class="card-body">
                 <h3>Fastest Travel</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eaque.</p>
+                <p>Plan your trips with the fastest travel options available. Get expert advice and recommendations for efficient and speedy journeys.</p>
               </div>
             </div>
 
@@ -367,7 +370,7 @@
               <i class="fas fa-hiking"></i>
               <div class="card-body">
                 <h3>Adventures</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eaque.</p>
+                <p>Discover a world of adventure on our website. Get tips, recommendations, and resources for all your travel needs. Start your next journey today!</p>
               </div>
             </div>
 
@@ -458,7 +461,6 @@
           <div class="col-md-6 py-3 py-md-0">
             <h2>How Travel Agency Work</h2>
             <p>A travel agent is a highly organized professional who is passionate about travel and helping others. They are focused on creating the best possible experiences, directly catered to their clients. They work with hotels, airlines, and other vendors to create travel packages and experiences that their clients will love. Travel agents can work with large groups, individuals, families, professional organizations, and others to help create seamless travel experiences that help create memories.</p>
-            <button id="about-btn">Read More...</button>
           </div>
 
         </div>
@@ -483,13 +485,12 @@
         <i class="fa-brands fa-facebook"></i>
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-pinterest-p"></i>
       </div>
       <div class="credit">
-        <p>Designed By <a href="#">Meet developers</a></p>
+        <p>Designed By <a href="../xplore project/index.php">Meet developers</a></p>
       </div>
       <div class="copyright">
-        <p>&copy;Copyright Meet developers. All Rights Reserved</p>
+        <p>&copy;Copyright My Trip Planner. All Rights Reserved</p>
       </div>
     </footer>
     <!-- Footer End -->
@@ -507,3 +508,5 @@
     <script src="one.js   "></script>
 </body>
 </html>
+
+
